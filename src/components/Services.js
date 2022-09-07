@@ -19,7 +19,7 @@ function Services(props) {
           occurs when you're using a web font in a logo or heading.
         </p>
         <a href={Resume} download>
-          <button className="ser-button">Dowmload</button>
+          <button className="ser-button">Dowmload CV</button>
         </a>
       </div>
 

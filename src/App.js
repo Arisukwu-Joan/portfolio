@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Array from "../src/Array";
 import Feedback from "./components/Feedback";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const arrayElement = Array.map((item) => (
@@ -25,6 +26,7 @@ function App() {
       {arrayElement}
       <Feedback />
       <Contact />
+      <Footer />
     </>
   );
 }

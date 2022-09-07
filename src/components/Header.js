@@ -11,7 +11,7 @@ function Header() {
             <li>Home</li>
             <li>Service</li>
             <li>Experience</li>
-            <li>Contact Us</li>
+            <li>Contact</li>
             <li>Testmonial</li>
           </ul>
           <button className="nav-button">Portfolio</button>
