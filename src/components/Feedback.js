@@ -13,6 +13,7 @@ function Feedback() {
     const randomNumber = Math.floor(Math.random() * element.length);
     const url = element[randomNumber].url;
     setImgGallery((prevState) => ({ ...imgGallery, randomImage: url }));
+    setGetPhotos();
   }
 
   return (
