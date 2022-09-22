@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Gallery from "../Gallery";
 
 function Feedback() {
@@ -6,14 +6,18 @@ function Feedback() {
     randomImage: "",
   });
 
-  const [getPhotos, setGetPhotos] = useState(Gallery);
-
-  function handleClick() {
-    const element = getPhotos.data.monial;
+  useEffect(() => {
+    const element = Gallery.data.monial;
     const randomNumber = Math.floor(Math.random() * element.length);
     const url = element[randomNumber].url;
-    setImgGallery((prevState) => ({ ...imgGallery, randomImage: url }));
-    setGetPhotos();
+    setImgGallery({ randomImage: url });
+  }, []);
+
+  function handleClick() {
+    const element = Gallery.data.monial;
+    const randomNumber = Math.floor(Math.random() * element.length);
+    const url = element[randomNumber].url;
+    setImgGallery({ randomImage: url });
   }
 
   return (
